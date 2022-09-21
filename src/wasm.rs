@@ -52,7 +52,6 @@ pub fn prove_fib(e1: u64, e2: u64, params_ser: JsValue) {
     )
     .expect("create_proof should not fail");
 
-    // let proof: Vec<u8> = transcript.finalize();
-    let proof = [1 as u8];
+    let proof: Vec<u8> = transcript.finalize();
     JsValue::from_serde(&proof).unwrap();
 }
