@@ -1,1 +1,2 @@
-mod fibonacci;
+pub mod fibonacci;
+pub mod wasm;
